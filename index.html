@@ -125,6 +125,7 @@ strong{color:var(--ink)}
 .box li{padding:10px 0 10px 30px;position:relative;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink)}
 .box li:before{content:"✓";position:absolute;left:4px;color:var(--green);font-weight:800}
 .box li em{font-style:normal;color:var(--grey);font-size:13px}
+.box li .dentro{display:block;color:var(--grey);font-size:13px;margin-top:4px;line-height:1.45}
 .old{color:var(--grey);text-decoration:line-through;font-size:18px}
 .price{font-size:clamp(46px,8vw,64px);font-weight:800;color:var(--navy);line-height:1.05}
 .price sup{font-size:.4em;vertical-align:top;position:relative;top:.5em}
@@ -263,7 +264,7 @@ footer a{color:#C9D2E0}
       <div><b>10</b><span>Modelos de anúncio</span><small>Venda, aluguel, lançamento e investidor</small></div>
       <div><b>6</b><span>Mensagens de WhatsApp</span><small>Da saudação ao convite para a visita</small></div>
       <div><b>4</b><span>Métricas explicadas</span><small>Com regras claras de decisão</small></div>
-      <div><b>+</b><span>Planilha de leads</span><small>Para não esquecer nenhum contato</small></div>
+      <div><b>+</b><span>Planilha de leads</span><small>Arquivo editável para não esquecer nenhum contato</small></div>
       <div><b>✓</b><span>Checklists diários</span><small>Você sabe exatamente o que fazer</small></div>
     </div>
   </div>
@@ -288,11 +289,10 @@ footer a{color:#C9D2E0}
     <h2>Comece hoje. Seu anúncio pode estar no ar em menos de uma semana.</h2>
     <div class="box">
       <ul>
-        <li>Manual Prático do Corretor no Tráfego <em>(PDF, 7 capítulos)</em></li>
-        <li>10 modelos de copy para anúncios</li>
-        <li>6 mensagens prontas para o WhatsApp</li>
-        <li>Roteiro de vídeo de 30 segundos</li>
-        <li>Planilha de controle de leads</li>
+        <li><b>Manual Prático do Corretor no Tráfego</b> <em>(PDF, 7 capítulos)</em>
+          <span class="dentro">Dentro do manual: 10 modelos de copy para anúncios, 6 mensagens prontas para o WhatsApp e roteiro de vídeo de 30 segundos</span></li>
+        <li><b>Planilha de controle de leads</b> <em>(editável no Excel ou Google Planilhas)</em>
+          <span class="dentro">Status de cada contato, alerta de quem está sem resposta e resumo do funil</span></li>
       </ul>
       <div class="old">De R$ 97,00</div>
       <div class="price"><sup>R$</sup>19,99</div>

@@ -116,7 +116,7 @@ strong{color:var(--ink)}
 
 /* AUTHOR */
 .author{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center}
-.avatar{width:180px;height:180px;border-radius:50%;background:var(--soft);border:3px solid var(--orange);display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:12px;text-align:center;padding:20px;font-weight:600}
+.avatar{width:180px;height:180px;border-radius:50%;border:3px solid var(--orange);object-fit:cover;display:block}
 
 /* OFFER */
 .offer{background:var(--alt)}
@@ -191,7 +191,7 @@ footer a{color:#C9D2E0}
         <div class="bt">Corretor<br>no Tráfego</div>
         <div class="bs">Seus primeiros leads no WhatsApp em 7 dias, anunciando sozinho com R$ 10 por dia.</div>
         <div class="days"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i></div>
-        <div class="by">Pedro • Phoenix Rise</div>
+        <div class="by">Pedro Costa</div>
       </div>
     </div>
   </div>
@@ -272,10 +272,10 @@ footer a{color:#C9D2E0}
 <!-- AUTHOR -->
 <section>
   <div class="wrap narrow author">
-    <div class="avatar">Coloque aqui sua foto</div>
+    <img class="avatar" src="pedro.jpg" alt="Pedro Costa" width="180" height="180" loading="lazy">
     <div>
       <span class="kicker">Quem escreveu</span>
-      <h2 style="font-size:28px">Pedro, da Phoenix Rise</h2>
+      <h2 style="font-size:28px">Pedro Costa</h2>
       <p>Gestor de tráfego especializado no mercado imobiliário. Trabalho todos os dias com campanhas de Meta Ads e Google Ads para corretores e imobiliárias, com foco em uma coisa: gerar contatos de verdade. Este manual reúne o essencial do que eu aplico, explicado para quem está começando.</p>
     </div>
   </div>
@@ -331,7 +331,7 @@ footer a{color:#C9D2E0}
 </section>
 
 <footer>
-  <p>Manual Prático do Corretor no Tráfego • Phoenix Rise</p>
+  <p>Manual Prático do Corretor no Tráfego • Pedro Costa</p>
   <p style="margin-top:6px">Este produto não é afiliado ao Facebook, ao Instagram ou à Meta. Resultados variam conforme cada caso.</p>
 </footer>
 
@@ -343,7 +343,7 @@ var CHECKOUT_URL = "COLE_AQUI_O_LINK_DO_CHECKOUT";
 
 document.querySelectorAll(".js-checkout").forEach(function(a){
   a.setAttribute("href", CHECKOUT_URL);
-  /* InitiateCheckout fica no checkout do Phoenix OS. Aqui só um evento personalizado de clique, para diagnóstico. */
+  /* InitiateCheckout fica no checkout. Aqui só um evento personalizado de clique, para diagnóstico. */
   a.addEventListener("click", function(){
     try { if (window.fbq) fbq("trackCustom", "CliqueComprar"); } catch(e){}
   });

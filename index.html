@@ -339,7 +339,9 @@ footer a{color:#C9D2E0}
 
 <script>
 /* ===== COLE AQUI O LINK DO CHECKOUT DO PHOENIX OS ===== */
-var CHECKOUT_URL = "COLE_AQUI_O_LINK_DO_CHECKOUT";
+var CHECKOUT_URL = "https://os.phoenixrise.com.br/k/pr_iswrwcb0j837";
+/* Repassa UTMs e fbclid da página para o checkout, para a atribuição não se perder. */
+(function(){ try { var q = location.search.replace(/^\?/, ""); if (q) CHECKOUT_URL += (CHECKOUT_URL.indexOf("?") < 0 ? "?" : "&") + q; } catch(e){} })();
 
 document.querySelectorAll(".js-checkout").forEach(function(a){
   a.setAttribute("href", CHECKOUT_URL);
